@@ -1,0 +1,33 @@
+.card-style {
+  width: 25rem;
+  margin-bottom: 3rem;
+}
+.paragraph {
+  font-weight: 500;
+  text-align: center;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+.card-title {
+  text-align: center;
+  font-size: 27px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
